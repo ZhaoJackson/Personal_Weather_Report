@@ -1,5 +1,4 @@
 altair==5.4.1
-appnope @ file:///home/conda/feedstock_root/build_artifacts/appnope_1707233003401/work
 asttokens @ file:///home/conda/feedstock_root/build_artifacts/asttokens_1698341106958/work
 attrs==24.2.0
 backcall @ file:///home/conda/feedstock_root/build_artifacts/backcall_1592338393461/work

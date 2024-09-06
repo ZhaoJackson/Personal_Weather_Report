@@ -52,10 +52,10 @@ $ streamlit run app.py
 
 [![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://blank-app-template.streamlit.app/)
 
-# 🛠️ Technologiesv
-•	Python 3.8+
-•	Streamlit - Interactive web apps in Python
-•	Pandas - Data manipulation and analysis
-•	Requests - Fetching data from external APIs
-•	Plotly - Interactive plots and visualizations
-•	Subprocess - Running Llama3 CLI for outfit suggestions
+# 🛠️ Technologies
+- Python 3.8+
+- Streamlit - Interactive web apps in Python
+- Pandas - Data manipulation and analysis
+- Requests - Fetching data from external APIs
+- Plotly - Interactive plots and visualizations
+- Subprocess - Running Llama3 CLI for outfit suggestions
