@@ -2,7 +2,7 @@
 A Streamlit app that provides a 14-day weather forecast for a selected city and recommends outfits based on the weather conditions using the Llama3 model. The app retrieves weather data using an API, generates outfit suggestions using the Llama3 model, and displays an interactive dashboard.
 
 # 🚀 Features
-1. 🌦️ Fetches 14-day weather forecast for any city from 'Weatherapi.com'
+1. 🌦️ Fetches 3-day weather forecast for any city from 'Weatherapi.com'
 2. 👗 Uses Llama3 to suggest outfits based on the weather forecast, including temperature, rain probability, and conditions.
 3. 📊 Interactive dashboard where users can select a city and view detailed weather and outfit suggestions for each day.
 4. 🗂️ CSV caching for weather and outfit data, so results are saved and reused for each session.
@@ -50,7 +50,7 @@ $ streamlit run app.py
 - 📊 The dashboard displays a bar chart of the temperatures for the next 14 days.
 - 📅 Select any day from the dropdown to view the outfit suggestion for that specific date.
 
-[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://blank-app-template.streamlit.app/)
+[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://jackson-weather-app.streamlit.app/)
 
 # 🛠️ Technologies
 - Python 3.8+

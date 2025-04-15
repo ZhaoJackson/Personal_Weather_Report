@@ -12,7 +12,7 @@ def update_weather_data_for_city(city):
 # Function to create a Streamlit dashboard using Plotly for interactivity
 def create_dashboard(df, city):
     st.title(f"14-Day Weather Forecast for {city}")
-    fig = px.bar(df, x='Date', y='Temperature', title=f'Temperature Over the Next 14 Days for {city}')
+    fig = px.bar(df, x='Date', y='Temperature', title=f'Temperature Over the Next 3 Days for {city}')
     st.plotly_chart(fig, use_container_width=True)
     selected_date = st.selectbox("Select a Date to Get Outfit Suggestions", df['Date'])
     weather_info = df[df['Date'] == selected_date].iloc[0]
