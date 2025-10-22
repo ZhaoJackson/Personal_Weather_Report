@@ -10,16 +10,18 @@ A Streamlit app that provides a 3-day weather forecast for a selected city and r
 # 🏗️ Project Structure
 ```
 weather-report-app/
-|--- app.py                             # Main entry point for the Streamlit app
+|--- weather_app.py                     # Main entry point for the Streamlit app
+|--- .secrete                          # API key file (ignored by git)
 |--- LICENSE
 |--- README.md
 |--- requirements.txt                   # Python dependencies
 |--- src/
+|    |--- __init__.py                   # Makes src a Python package
 |    |--- commonconst.py                # Contains all constants, API keys, and common imports
 |    |--- data_processing.py            # Handles fetching and processing weather data
 |    |--- llama3.py                     # Generates outfit suggestions using Llama3 model
 |    |--- weather_processing.py         # Combines weather and outfit processing
-|    |--- streamlit_app.py              # Streamlit app functions for dashboard creation
+|    |--- streamlit.py                  # Streamlit app functions for dashboard creation
 |    |--- forecast/
 |        |--- weather_forecast.csv      # CSV file to store weather and outfit data
 ```
@@ -27,28 +29,34 @@ weather-report-app/
 # 📝 Instructions
 1. 🛠️ Clone the repository
 ```
-$ git clone https://github.com/yourusername/weather-report-app.git
+$ git clone https://github.com/ZhaoJackson/Personal_Weather_Report.git
 ```
 2. 📁 Navigate to the project directory
 ```
-$ cd weather-report-app
+$ cd Personal_Weather_Report
 ```
 3. 📦 Install the required dependencies
 Ensure you have Python 3.9+ and pip installed on your machine. Then install the requirements:
 ```
 $ pip install -r requirements.txt
 ```
-4. 🏃 Run the app
+4. 🔑 Configure your Weather API key (choose one)
+   - Create a `.secrete` file at the repo root
+     ```
+     echo 'API_KEY = "your_weather_api_key"' > .secrete
+     ```
+5. 🏃 Run the app
 ```
-$ streamlit run app.py
+$ streamlit run weather_app.py
 ```
-5. 🌐 Open the app in your browser by visiting http://localhost:8501/.
+6. 🌐 Open the app in your browser by visiting http://localhost:8501/.
 
 # 🎮 Usage
 - 🏙️ Enter a city name in the sidebar to fetch a 14-day weather forecast.
-- 👕 The app will generate outfit suggestions for each day based on the forecast, such as suggesting an umbrella or raincoat when rain is expected.
+- 👕 The app will generate outfit suggestions for each day based on the forecast using Llama3, such as suggesting an umbrella or raincoat when rain is expected.
 - 📊 The dashboard displays a bar chart of the temperatures for the next 3 days.
 - 📅 Select any day from the dropdown to view the outfit suggestion for that specific date.
+- 🔄 Weather data and outfit suggestions are cached in CSV format for faster loading.
 
 [![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://jackson-weather-app.streamlit.app/)
 

@@ -164,4 +164,5 @@ cython_debug/
 #.idea/
 
 *.csv
-src/commonconst.py
+src/secrets.py
+.secrete

@@ -16,6 +16,8 @@ def generate_weather_and_outfit_data(city):
 
     weather_df['Outfit_Suggestion'] = outfit_suggestions
 
+    # Ensure forecast directory exists before writing
+    FORECAST_DIR.mkdir(parents=True, exist_ok=True)
     weather_df.to_csv(CSV_FILE, index=False)
     
     return weather_df
